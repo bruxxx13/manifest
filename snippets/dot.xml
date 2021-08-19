@@ -9,6 +9,10 @@
           review="https://review.droidontime.com/"
           revision="refs/heads/dot11" />
   
+  <remote name="notdot"
+          fetch="https://github.com/bruxxx13/"
+          revision="dot11" />
+  
   <remote name="dot-gitlab"
           fetch="http://gitlab.com/dotos-official/"
           review="https://review.droidontime.com/"
@@ -56,7 +60,7 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="dot" />
 
   <!-- Dot Repos -->
-  <project path="vendor/dot" name="android_vendor_dot" remote="dot" />
+  <project path="vendor/dot" name="android_vendor_dot" remote="notdot" />
   <project path="vendor/support" name="android_vendor_support" remote="dot" />
   <project path="vendor/gms" name="android_vendor_gms" remote="dot-gitlab" />
   <project path="device/dot/sepolicy" name="android_device_dot_sepolicy" remote="dot" />
